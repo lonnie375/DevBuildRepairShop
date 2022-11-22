@@ -43,12 +43,5 @@ namespace RepairShopUpdate.Controllers
 		{
 			Instrument.Update(order);
 		}
-
-		// GET /Instrument/short – get the short version of all the orders
-		[HttpGet("short")]
-		public List<ShortRepairList> GetAll()
-		{
-			return ShortRepairList.getAll();
-		}
 	}
 }

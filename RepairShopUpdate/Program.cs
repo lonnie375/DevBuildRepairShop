@@ -46,6 +46,8 @@ app.UseAuthorization();
 app.MapControllers();
 
 string connstring = app.Configuration.GetConnectionString("db");
-DAL.DB = new MySqlConnection(connstring); // Need the using statement above
+DAL.CS = connstring; 
+//Get rid of this. This isn't needed;DAL.DB = new MySqlConnection(connstring); // Need the using statement above
+
 
 app.Run();
