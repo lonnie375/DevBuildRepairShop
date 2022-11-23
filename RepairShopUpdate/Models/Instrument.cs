@@ -51,7 +51,7 @@ namespace RepairShopAPI
 			db.Open();
 			Instrument inst = new Instrument();
 			inst.id = id;
-			db.Delete<Instrument>(inst);
+			db.Delete(inst);
 			db.Close(); 
 		}
 
